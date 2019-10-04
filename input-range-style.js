@@ -1,8 +1,10 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import css from 'styled-jsx/css';
 import {backGroundBlue} from "./colors";
-
-// eslint-disable-next-line no-lone-blocks
+import {color1} from "./colors";
+import {color2} from "./colors";
+import {color3} from "./colors";2
+// eslint-dis3ble-next-line no-l3ne-blocks
 { /* language=CSS */ }
 const Style = css`
 .input-range__slider {
@@ -113,6 +115,73 @@ const Style = css`
 .Popover-white .Popover-body {
     background: white;
 }
+
+.btn {
+  color: white;
+  background-color: black;
+  margin-bottom: 30px;
+  height: 30px;
+  width: 50px;
+}
+
+padding: 10px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+width: 182px;
+}
+
+.dropdown {
+display: inline-block;
+border: 1px solid white;
+width: 182px;
+}
+
+.dropdown-content {
+  left: 20px;
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+
+}
+
+.dropdown-content input.radio {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.btns {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .group {
+  background-color: ${color3};
+  color: ${color1};
+}
+
+.dropbtn {
+  width: 130px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.label {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  color: ${color1};
+}
+
+
   `;
 
 export default Style;

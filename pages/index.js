@@ -23,13 +23,13 @@ import Tip from '../components/tool-tip';
 const Description = 'Discover the next evolution of Sudoku with amazing graphics, animations, and user-friendly features. Enjoy a Sudoku experience like you never have before with customizable game generation, cell highlighting, intuitive controls and more!';
 const cellWidth = 2.5;
 
-const LightBlue100 = '#B3E5FC';
-const LightBlue200 = '#81D4FA';
-const LightBlue300 = '#4FC3F7';
-const Indigo700 = '#303F9F';
-const DeepOrange200 = '#FFAB91';
-const DeepOrange600 = '#F4511E';
-const ControlNumberColor = Indigo700;
+let LightBlue100 = '#B3E5FC';
+let LightBlue200 = '#81D4FA';
+let LightBlue300 = '#4FC3F7';
+let Indigo700 = '#303F9F';
+let DeepOrange200 = '#FFAB91';
+let DeepOrange600 = '#F4511E';
+let ControlNumberColor = Indigo700;
 
 // eslint-disable-next-line no-lone-blocks
 { /* language=CSS */ }
@@ -205,6 +205,7 @@ class GenerationUI extends Component {
   constructor(props) {
     super(props);
 
+
     this.state = { value: 30 };
   }
 
@@ -212,9 +213,88 @@ class GenerationUI extends Component {
     this.props.generateGame(this.state.value);
   }
 
+
+handler = (e) => {
+    console.log('second e: ', e.target.id);
+    let target = e.target.id;
+    let color1;
+    let color2;
+    let color3;
+
+    if (target === 'green') {
+      LightBlue200 = 'rgb(0,255,0)';
+      console.log('-----: ',LightBlue100)
+        color1 = 'rgb(0,255,0)';
+        color2 = 'rgb(0,100,0)';
+        color3 = 'rgb(0,150,0)';
+    }
+    if (target === 'blue') {
+      //LightBlue100 = '##006400'
+        color1 = 'rgb(0,0,150)';
+        color2 = 'rgb(0,0,100)';
+        color3 = 'rgb(0,0,255)';
+    }
+    if (target === 'purple') {
+        color1 = 'rgb(150,0,150)';
+        color2 = 'rgb(100,0,100)';
+        color3 = 'rgb(255,0,255)';
+    }
+    if (target === 'red') {
+        color1 = 'rgb(255,0,0)';
+        color2 = 'rgb(150,0,0)';
+        color3 = 'rgb(175,0,0)';
+    }
+    if (target === 'orange') {
+        color1 = 'rgb(255,175,0)';
+        color2 = 'rgb(255,140,0)';
+        color3 = 'rgb(255,100,0)';
+    }
+    if (target === 'yellow') {
+        color1 = 'rgb(225,225,0)';
+        color2 = 'rgb(255,255,0)';
+        color3 = 'rgb(200,200,0)';
+    }
+
+
+    //document.getElementsByName('btns').style.setProperty('color1', color2);
+
+    document.documentElement.style.setProperty('--color1', color1);
+    document.documentElement.style.setProperty('--color2', color2);
+    document.documentElement.style.setProperty('--color3', color3);
+}
+
   render() {
     return (
       <div className="generation">
+        <div className="dropdown">
+          <button class="dropbtn btn">Select a color theme</button>
+          <div class="dropdown-content">
+            <div class='group'>
+              <input class='btns'  onClick={this.handler} type="radio" name="btns" id="green" />
+              <label class='label' for="green">Green</label>
+            </div>
+            <div class='group'>
+              <input class='btns' onClick={this.handler} type="radio" name="btns" id="blue" />
+              <label class='label' for="blue">Blue</label>
+            </div>
+            <div class='group'>
+              <input class='btns' onClick={this.handler} type="radio" name="btns" id="purple" />
+              <label class='label' for="purple">Purple</label>
+            </div>
+            <div class='group'>
+              <input class='btns' onClick={this.handler} type="radio" name="btns" id="red" />
+              <label class='label' for="red">Red</label>
+            </div>
+            <div class='group'>
+              <input class='btns' onClick={this.handler} type="radio" name="btns" id="orange" />
+              <label class='label' for="orange">Orange</label>
+            </div>
+            <div class='group'>
+              <input class='btns' onClick={this.handler} type="radio" name="btns" id="yellow" />
+              <label class='label' for="yellow">Yellow</label>
+            </div>
+          </div>
+        </div>
         <div className="copy">Start with {this.state.value} cells prefilled</div>
         <InputRange
           maxValue={81}
@@ -809,7 +889,7 @@ export default class Index extends Component {
         {board && this.renderPuzzle()}
         {board && this.renderControls()}
         <div className="rooter">
-          Made with <span>❤️</span>️ By <a href="https://www.sitianliu.com/">Sitian Liu</a> | <a href="https://medium.com/@sitianliu_57680/building-a-sudoku-game-in-react-ca663915712">Blog Post</a>
+          {/* Made with <span>❤️</span>️ By <a href="https://www.sitianliu.com/">Sitian Liu</a> | <a href="https://medium.com/@sitianliu_57680/building-a-sudoku-game-in-react-ca663915712">Blog Post</a> */}
         </div>
         { /* language=CSS */ }
         <style jsx>{`

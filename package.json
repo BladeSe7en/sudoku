@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "sass": "sass --watch src/css/style.scss public/style.css",
     "start": "next start",
     "export": "next export"
   },
@@ -20,6 +21,8 @@
     "react-dom": "^16.2.0",
     "react-input-range": "^1.3.0",
     "react-popover": "^0.5.4",
+    "sass": "^1.23.0",
+    "scss": "^0.2.4",
     "sw-precache-webpack-plugin": "^0.11.4"
   },
   "devDependencies": {
