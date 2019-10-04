@@ -7,7 +7,7 @@
     "dev": "node server.js",
     "build": "next build",
     "sass": "sass --watch src/css/style.scss public/style.css",
-    "start": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js",
     "export": "next export"
   },
   "author": "",

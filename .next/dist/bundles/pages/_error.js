@@ -67,25 +67,24 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "/Users/brianconnors/react-sudoku-game/node_modules/next/dist/pages/_error.js":
+/***/ 10:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(11);
+
+
+/***/ }),
+
+/***/ 11:
 /***/ (function(module, exports) {
 
 module.exports = require("/Users/brianconnors/react-sudoku-game/node_modules/next/dist/pages/_error.js");
 
-/***/ }),
-
-/***/ 0:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("/Users/brianconnors/react-sudoku-game/node_modules/next/dist/pages/_error.js");
-
-
 /***/ })
 
 /******/ });
-//# sourceMappingURL=_error.js.map
