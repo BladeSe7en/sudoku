@@ -9,8 +9,8 @@ import {color3} from "./colors";2
 const Style = css`
 .input-range__slider {
   appearance: none;
-  background: #3f51b5;
-  border: 1px solid #3f51b5;
+  background: var(--color3);
+  border: 1px solid var(--color1);
   border-radius: 100%;
   cursor: pointer;
   display: block;
@@ -36,7 +36,7 @@ const Style = css`
   transition: left 0.3s ease-out; }
 
 .input-range__label {
-  color: #aaaaaa;
+  color: var(--color3);
   font-size: 0.8rem;
   transform: translateZ(0);
   white-space: nowrap; }
@@ -81,7 +81,7 @@ const Style = css`
   top: 50%; }
 
 .input-range__track--active {
-  background: #3f51b5; }
+  background: var(--color3); }
 
 .input-range {
   height: 1rem;
@@ -133,7 +133,6 @@ width: 182px;
 
 .dropdown {
 display: inline-block;
-border: 1px solid white;
 width: 182px;
 }
 
@@ -161,8 +160,8 @@ display: block;
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .group {
-  background-color: ${color3};
-  color: ${color1};
+  background-color: var(--color3);
+  color: var(--color1);
 }
 
 .dropbtn {
@@ -178,7 +177,17 @@ display: block;
   text-align: center;
   font-size: 30px;
   margin-top: 10px;
-  color: ${color1};
+  color: var(--color1);
+}
+
+body {
+  background-color: var(--color2)
+}
+
+:root {
+  --color1: rgb(0,150,0);
+  --color2: rgb(0,100,0);
+  --color3: rgb(0,255,0);
 }
 
 

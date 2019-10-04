@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import NextHead from 'next/head';
 import Color from 'color';
 import InputRange from 'react-input-range';
-
 // eslint-disable-next-line import/no-extraneous-dependencies
 import css from 'styled-jsx/css';
 
@@ -18,6 +17,7 @@ import ReturnIcon from '../svg/return.svg';
 import { makePuzzle, pluck, isPeer as areCoordinatePeers, range } from '../sudoku';
 import { backGroundBlue } from '../colors';
 import Tip from '../components/tool-tip';
+
 
 
 const Description = 'Discover the next evolution of Sudoku with amazing graphics, animations, and user-friendly features. Enjoy a Sudoku experience like you never have before with customizable game generation, cell highlighting, intuitive controls and more!';
@@ -35,6 +35,7 @@ let ControlNumberColor = Indigo700;
 { /* language=CSS */ }
 const CellStyle = css`
 .cell {
+    color: white;
     height: ${cellWidth}em;
     width: ${cellWidth}em;
     display: flex;
@@ -46,10 +47,10 @@ const CellStyle = css`
     transition: background-color .3s ease-in-out;
 }
 .cell:nth-child(3n+3):not(:last-child) {
-    border-right: 2px solid black;
+    border-right: 2px solid var(--color1);
 }
 .cell:not(:last-child) {
-    border-right: 1px solid black;
+    border-right: 1px solid var(--color1);
 }
 .note-number {
     font-size: .6em;
@@ -116,7 +117,7 @@ const NumberControlStyle = css`
     margin: .1em;
     width: 1.5em;
     height: 1.5em;
-    color: ${ControlNumberColor};
+    color: var(--color1);
     box-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.23);
     border-radius: 50%;
 }
@@ -132,7 +133,7 @@ const PuzzleStyle = css`
     margin-top: .5em;
     width: ${cellWidth * 9}em;
     cursor: pointer;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px white, 0 3px 6px white;
 }
 .row {
     display: flex;
@@ -141,10 +142,10 @@ const PuzzleStyle = css`
     width: ${cellWidth * 9}em;
 }
 .row:not(:last-child) {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color1);
 }
 .row:nth-child(3n+3):not(:last-child) {
-    border-bottom: 2px solid black !important;
+    border-bottom: 2px solid var(--color1) !important;
 }
 `;
 
@@ -167,7 +168,7 @@ const CirculuarProgressStyle = css`
 }
 
 .circle {
-    stroke: ${ControlNumberColor};
+    stroke: var(--color1);
     transition: stroke-dasharray .4s ease-in-out;
     fill: none;
     stroke-width: 2.8;
@@ -224,15 +225,15 @@ handler = (e) => {
     if (target === 'green') {
       LightBlue200 = 'rgb(0,255,0)';
       console.log('-----: ',LightBlue100)
-        color1 = 'rgb(0,255,0)';
+        color1 = 'rgb(0,150,0)';
         color2 = 'rgb(0,100,0)';
-        color3 = 'rgb(0,150,0)';
+        color3 = 'rgb(0,255,0)';
     }
     if (target === 'blue') {
       //LightBlue100 = '##006400'
         color1 = 'rgb(0,0,150)';
         color2 = 'rgb(0,0,100)';
-        color3 = 'rgb(0,0,255)';
+        color3 = 'rgb(155,155,255)';
     }
     if (target === 'purple') {
         color1 = 'rgb(150,0,150)';
@@ -240,9 +241,9 @@ handler = (e) => {
         color3 = 'rgb(255,0,255)';
     }
     if (target === 'red') {
-        color1 = 'rgb(255,0,0)';
+        color1 = 'rgb(175,0,0)';
         color2 = 'rgb(150,0,0)';
-        color3 = 'rgb(175,0,0)';
+        color3 = 'rgb(255,0,0)';
     }
     if (target === 'orange') {
         color1 = 'rgb(255,175,0)';
@@ -309,6 +310,7 @@ handler = (e) => {
                 text-align: center;
                 font-size: 1.3em;
                 margin-bottom: .5em;
+                color: var(--color3)
             }
             .generation {
                 display: flex;
@@ -321,6 +323,14 @@ handler = (e) => {
                 width: 80%;
                 max-width: 500px;
             }
+
+            @import './vars.css'
+            :root {
+              --color1: rgb(0,150,0);
+              --color2: rgb(0,100,0);
+              --color3: rgb(0,255,0);
+          }
+
             .button {
               margin-top: .5em;
               border-radius: .25em;
@@ -340,14 +350,14 @@ handler = (e) => {
             }
 
             .button {
-              background-color: ${backGroundBlue};
-              box-shadow: 0 2px 4px 0 ${Color(backGroundBlue).darken(0.5).hsl().string()};
+              background-color: var(--color3);
+              box-shadow: 0 2px 4px 0 var(--color3).darken(0.5).hsl().string()};
               display: flex;
               align-items: center;
             }
 
             .button:hover {
-              background-color: ${Color(backGroundBlue).lighten(0.2).hsl().string()};
+              background-color: var(--color3).lighten(0.2).hsl().string()};
             }
         `}
         </style>
@@ -407,7 +417,7 @@ const Cell = (props) => {
       <style jsx>{`
                 .cell {
                     background-color: ${backgroundColor || 'initial'};
-                    color: ${fontColor || 'initial'};
+                    color: white || 'initial';
                 }
             `}
       </style>
@@ -858,11 +868,13 @@ export default class Index extends Component {
                 justify-content: center;
                 align-items: center;
                 padding: .2em 0;
+                color: white;
             }
             .new-game :global(svg) {
                 height: 1em;
                 margin-bottom: .3em;
             }
+            
         `}
         </style>
       </div>
@@ -945,6 +957,54 @@ export default class Index extends Component {
                 width: 100%;
                 text-align: center;
             }
+            .dropdown {
+              display: inline-block;
+              width: 182px;
+              }
+              
+              .dropdown-content {
+                left: 20px;
+                display: none;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                position: absolute;
+                top: 50px;
+              
+              }
+              
+              .dropdown-content input.radio {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              }
+              
+              .btns {background-color: #ddd;}
+              
+              .dropdown:hover .dropdown-content {display: block;}
+              
+              .dropdown:hover .group {
+                background-color: var(--color3);
+                color: var(--color1);
+              }
+              
+              .dropbtn {
+                width: 130px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+              }
+              
+              .label {
+                display: inline-block;
+                width: 100px;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 10px;
+                color: var(--color1);
+              }
         `}
         </style>
         <style jsx global>{RangeStyle}</style>
