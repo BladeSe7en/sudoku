@@ -4,10 +4,10 @@
   "description": "A sudoku web game packed with user-friendly features. It is built with React + Next.js",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "sass": "ass --watch src/css/style.scss public/style.css",
-    "start": "PORT=8080 NODE_ENV=development node server.js",
+    "sass": "sass --watch src/css/style.scss public/style.css",
+    "start": "NODE_ENV=development node server.js",
     "export": "next export"
   },
   "author": "",
