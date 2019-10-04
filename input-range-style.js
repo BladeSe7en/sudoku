@@ -9,7 +9,7 @@ import {color3} from "./colors";2
 const Style = css`
 .input-range__slider {
   appearance: none;
-  background: var(--color3);
+  background: var(--color2);
   border: 1px solid var(--color1);
   border-radius: 100%;
   cursor: pointer;

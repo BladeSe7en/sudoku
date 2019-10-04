@@ -147,6 +147,9 @@ const PuzzleStyle = css`
 .row:nth-child(3n+3):not(:last-child) {
     border-bottom: 2px solid var(--color1) !important;
 }
+body {
+  background-color: var(--color3)
+}
 `;
 
 // eslint-disable-next-line no-lone-blocks
@@ -173,6 +176,9 @@ const CirculuarProgressStyle = css`
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;
+}
+body {
+  background-color: var(--color3)
 }
 `;
 
@@ -218,39 +224,39 @@ class GenerationUI extends Component {
 handler = (e) => {
     console.log('second e: ', e.target.id);
     let target = e.target.id;
+    console.log('target: ',target)
+    console.log('typeof: ',typeof(target))
     let color1;
     let color2;
     let color3;
 
-    if (target === 'green') {
-      LightBlue200 = 'rgb(0,255,0)';
-      console.log('-----: ',LightBlue100)
+    if (target == 'green') {
         color1 = 'rgb(0,150,0)';
         color2 = 'rgb(0,100,0)';
         color3 = 'rgb(0,255,0)';
     }
-    if (target === 'blue') {
-      //LightBlue100 = '##006400'
+    if (target == 'blue') {
         color1 = 'rgb(0,0,150)';
-        color2 = 'rgb(0,0,100)';
-        color3 = 'rgb(155,155,255)';
+        color2 = 'rgb(155,155,255)';
+        color3 = 'rgb(0,0,255)';
+        console.log('this is color2: ',color2)
     }
-    if (target === 'purple') {
+    if (target == 'purple') {
         color1 = 'rgb(150,0,150)';
-        color2 = 'rgb(100,0,100)';
-        color3 = 'rgb(255,0,255)';
+        color2 = 'rgb(255,0,255)';
+        color3 = 'rgb(100,0,100)';
     }
-    if (target === 'red') {
+    if (target == 'red') {
         color1 = 'rgb(175,0,0)';
         color2 = 'rgb(150,0,0)';
         color3 = 'rgb(255,0,0)';
     }
-    if (target === 'orange') {
+    if (target == 'orange') {
         color1 = 'rgb(255,175,0)';
         color2 = 'rgb(255,140,0)';
         color3 = 'rgb(255,100,0)';
     }
-    if (target === 'yellow') {
+    if (target == 'yellow') {
         color1 = 'rgb(225,225,0)';
         color2 = 'rgb(255,255,0)';
         color3 = 'rgb(200,200,0)';
@@ -358,6 +364,9 @@ handler = (e) => {
 
             .button:hover {
               background-color: var(--color3).lighten(0.2).hsl().string()};
+            }
+            body {
+              background-color: var(--color3)
             }
         `}
         </style>
@@ -874,6 +883,37 @@ export default class Index extends Component {
                 height: 1em;
                 margin-bottom: .3em;
             }
+            .button {
+              margin-top: .5em;
+              border-radius: .25em;
+              cursor: pointer;
+              font-weight: bold;
+              text-decoration: none;
+              color: #fff;
+              position: relative;
+              display: inline-block;
+              transition: all .25s;
+              padding: 5px 10px;
+              font-size: 1.4em;
+            }
+            .button:active {
+              transform: translate(0px, 5px);
+              box-shadow: 0 1px 0 0;
+            }
+
+            .button {
+              background-color: var(--color3);
+              box-shadow: 0 2px 4px 0 var(--color3).darken(0.5).hsl().string()};
+              display: flex;
+              align-items: center;
+            }
+
+            .button:hover {
+              background-color: var(--color3).lighten(0.2).hsl().string()};
+            }
+            body {
+              background-color: var(--color3)
+            }
             
         `}
         </style>
@@ -916,6 +956,7 @@ export default class Index extends Component {
                 height: 100vh;
                 width: 100vw;
                 position: relative;
+                background: var(--color2)
             }
             @media (min-width: 800px) and (min-height: 930px){
                 :global(.header, .puzzle, .controls) {
@@ -1003,8 +1044,9 @@ export default class Index extends Component {
                 text-align: center;
                 font-size: 30px;
                 margin-top: 10px;
-                color: var(--color1);
+                color: var(--color2);
               }
+              
         `}
         </style>
         <style jsx global>{RangeStyle}</style>
