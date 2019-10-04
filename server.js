@@ -1,32 +1,27 @@
-// const express = require('express');
-// const next = require('next');
-
-// This file doesn't go through babel or webpack transformation.
-// Make sure the syntax and sources this file requires are compatible with the current node version you are running
-// See https://github.com/zeit/next.js/issues/1245 for discussions on Universal Webpack or universal Babel
-const { createServer } = require('http')
-const { parse } = require('url')
 const next = require('next')
+const http = require('http')
+
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
-const handle = app.getRequestHandler()
+const handleNextRequests = app.getRequestHandler()
 
 app.prepare().then(() => {
-  createServer((req, res) => {
-    // Be sure to pass `true` as the second argument to `url.parse`.
-    // This tells it to parse the query portion of the URL.
-    const parsedUrl = parse(req.url, true)
-    const { pathname, query } = parsedUrl
-
-    if (pathname === '/a') {
-      app.render(req, res, '/b', query)
-    } else if (pathname === '/b') {
-      app.render(req, res, '/a', query)
+  const server = new http.Server((req, res) => {
+    // Add assetPrefix support based on the hostname
+    if (req.headers.host === 'my-app.com') {
+      app.setAssetPrefix('http://cdn.com/myapp')
     } else {
-      handle(req, res, parsedUrl)
+      app.setAssetPrefix('')
     }
-  }).listen(8080, err => {
-    if (err) throw err
-    console.log('> Server ready on http://localhost:8080')
+
+    handleNextRequests(req, res)
+  })
+
+  server.listen(port, err => {
+    if (err) {
+      throw err
+    }
+
+    console.log(`> Ready on http://localhost:${port}`)
   })
 })

@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "sass": "ass --watch src/css/style.scss public/style.css",
-    "start": "NODE_ENV=production node server.js -port 8080",
+    "start": "PORT=8080 NODE_ENV=development node server.js",
     "export": "next export"
   },
   "author": "",

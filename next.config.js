@@ -19,6 +19,7 @@ module.exports = {
         },
       });
     }
+    
     config.plugins.push(new SWPrecacheWebpackPlugin({
       verbose: true,
       staticFileGlobsIgnorePatterns: [/\.next\//],
