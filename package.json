@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "sass": "sass --watch src/css/style.scss public/style.css",
-    "start": "next start",
+    "sass": "ass --watch src/css/style.scss public/style.css",
+    "start": "NODE_ENV=production node server.js -port 8080",
     "export": "next export"
   },
   "author": "",
