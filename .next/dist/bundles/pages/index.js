@@ -141,11 +141,11 @@ var color3 = '##009600';
 2;
 // eslint-dis3ble-next-line no-l3ne-blocks
 {/* language=CSS */}
-var Style = ["{padding:10px;font-size:16px;font-weight:bold;border:none;width:182px;}", ".input-range__slider{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:var(--color2);border:1px solid var(--color1);border-radius:100%;cursor:pointer;display:block;height:1rem;margin-left:-0.5rem;margin-top:-0.65rem;outline:none;position:absolute;top:50%;-webkit-transition:-webkit-transform 0.3s ease-out,box-shadow 0.3s ease-out;-webkit-transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;width:1rem;}", ".input-range__slider:active{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}", ".input-range__slider:focus{box-shadow:0 0 0 5px rgba(63,81,181,0.2);}", ".input-range--disabled .input-range__slider{background:#cccccc;border:1px solid #cccccc;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}", ".input-range__slider-container{-webkit-transition:left 0.3s ease-out;transition:left 0.3s ease-out;}", ".input-range__label{color:var(--color3);font-size:0.8rem;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);white-space:nowrap;}", ".input-range__label--min,.input-range__label--max{bottom:-1.4rem;position:absolute;}", ".input-range__label--min{left:0;}", ".input-range__label--max{right:0;}", ".input-range__label--value{position:absolute;top:-1.8rem;}", ".input-range__label-container{left:-50%;position:relative;}", ".input-range__label--max .input-range__label-container{left:50%;}", ".input-range__track{background:#eeeeee;border-radius:0.3rem;cursor:pointer;display:block;height:0.3rem;position:relative;-webkit-transition:left 0.3s ease-out,width 0.3s ease-out;transition:left 0.3s ease-out,width 0.3s ease-out;}", ".input-range--disabled .input-range__track{background:#eeeeee;}", ".input-range__track--background{left:0;margin-top:-0.15rem;position:absolute;right:0;top:50%;}", ".input-range__track--active{background:var(--color3);}", ".input-range{height:1rem;position:relative;margin-top:1.2em;margin-bottom:1.4em;}", ".Popover{z-index:2000;}", ".Popover-body{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:.5rem 1rem;background:white;border-radius:0.3rem;opacity:.95;box-shadow:rgba(0,0,0,0.12) 0 1px 6px,rgba(0,0,0,0.12) 0 1px 4px;font-size:14px;}", ".Popover-tipShape{fill:" + backGroundBlue + ";}", ".Popover-white .Popover-tipShape{fill:#00bcd4;}", ".Popover-white .Popover-body{background:white;}", ".btn{color:white;background-color:black;margin-bottom:30px;height:30px;width:50px;}", ".dropdown{display:inline-block;width:182px;}", ".dropdown-content{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}", ".dropdown-content input.radio{color:black;padding:12px 16px;text-decoration:none;display:block;}", ".btns{background-color:#ddd;}", ".dropdown:hover .dropdown-content{display:block;}", ".dropdown:hover .group{background-color:var(--color3);color:var(--color1);}", ".dropbtn{width:130px;position:absolute;top:20px;left:20px;}", ".label{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color1);}", "body{background-color:var(--color2);}", ":root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}"];
+var Style = ["{padding:10px;font-size:16px;font-weight:bold;border:none;width:182px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".input-range__slider{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:var(--color2);border:1px solid var(--color1);border-radius:100%;cursor:pointer;display:block;height:1rem;margin-left:-0.5rem;margin-top:-0.65rem;outline:none;position:absolute;top:50%;-webkit-transition:-webkit-transform 0.3s ease-out,box-shadow 0.3s ease-out;-webkit-transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;A width:1rem;}", ".input-range__slider:active{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}", ".input-range__slider:focus{box-shadow:0 0 0 5px rgba(63,81,181,0.2);}", ".input-range--disabled .input-range__slider{background:#cccccc;border:1px solid #cccccc;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}", ".input-range__slider-container{-webkit-transition:left 0.3s ease-out;transition:left 0.3s ease-out;}", ".input-range__label{color:var(--color3);font-size:0.8rem;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);white-space:nowrap;}", ".input-range__label--min,.input-range__label--max{bottom:-1.4rem;position:absolute;}", ".input-range__label--min{left:0;}", ".input-range__label--max{right:0;}", ".input-range__label--value{position:absolute;top:-1.8rem;}", ".input-range__label-container{left:-50%;position:relative;}", ".input-range__label--max .input-range__label-container{left:50%;}", ".input-range__track{background:#eeeeee;border-radius:0.3rem;cursor:pointer;display:block;height:0.3rem;position:relative;-webkit-transition:left 0.3s ease-out,width 0.3s ease-out;transition:left 0.3s ease-out,width 0.3s ease-out;}", ".input-range--disabled .input-range__track{background:#eeeeee;}", ".input-range__track--background{left:0;margin-top:-0.15rem;position:absolute;right:0;top:50%;}", ".input-range__track--active{background:var(--color3);}", ".input-range{height:1rem;position:relative;margin-top:1.2em;margin-bottom:1.4em;}", ".Popover{z-index:2000;}", ".Popover-body{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:.5rem 1rem;background:white;border-radius:0.3rem;opacity:.95;box-shadow:rgba(0,0,0,0.12) 0 1px 6px,rgba(0,0,0,0.12) 0 1px 4px;font-size:14px;}", ".Popover-tipShape{fill:" + backGroundBlue + ";}", ".Popover-white .Popover-tipShape{fill:#00bcd4;}", ".Popover-white .Popover-body{background:white;}", ".btn{color:white;background-color:black;margin-bottom:30px;height:30px;width:50px;}", ".dropdown{display:inline-block;width:182px;}", ".dropdown-content{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}", ".dropdown-content input.radio{color:black;padding:12px 16px;text-decoration:none;display:block;}", ".btns{background-color:#ddd;}", ".dropdown:hover .dropdown-content{display:block;}", ".dropdown:hover .group{background-color:var(--color3);color:var(--color1);}", ".dropbtn{width:130px;position:absolute;top:20px;left:20px;}", ".label{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color1);}", "body{background-color:var(--color2);}", ".get-started{margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;background-color:var(--color3);box-shadow:0 2px 4px 0 var(--color3).darken(0.5).hsl().string();}", ".get-started:active{-webkit-transform:translate(0px,5px);-ms-transform:translate(0px,5px);transform:translate(0px,5px);box-shadow:0 1px 0 0;margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;}", ":root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}"];
 
-Style.__hash = "1298959156";
-Style.__scoped = [".jsx-1967116149{padding:10px;font-size:16px;font-weight:bold;border:none;width:182px;}", ".input-range__slider.jsx-1967116149{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:var(--color2);border:1px solid var(--color1);border-radius:100%;cursor:pointer;display:block;height:1rem;margin-left:-0.5rem;margin-top:-0.65rem;outline:none;position:absolute;top:50%;-webkit-transition:-webkit-transform 0.3s ease-out,box-shadow 0.3s ease-out;-webkit-transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;width:1rem;}", ".input-range__slider.jsx-1967116149:active{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}", ".input-range__slider.jsx-1967116149:focus{box-shadow:0 0 0 5px rgba(63,81,181,0.2);}", ".input-range--disabled.jsx-1967116149 .input-range__slider.jsx-1967116149{background:#cccccc;border:1px solid #cccccc;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}", ".input-range__slider-container.jsx-1967116149{-webkit-transition:left 0.3s ease-out;transition:left 0.3s ease-out;}", ".input-range__label.jsx-1967116149{color:var(--color3);font-size:0.8rem;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);white-space:nowrap;}", ".input-range__label--min.jsx-1967116149,.input-range__label--max.jsx-1967116149{bottom:-1.4rem;position:absolute;}", ".input-range__label--min.jsx-1967116149{left:0;}", ".input-range__label--max.jsx-1967116149{right:0;}", ".input-range__label--value.jsx-1967116149{position:absolute;top:-1.8rem;}", ".input-range__label-container.jsx-1967116149{left:-50%;position:relative;}", ".input-range__label--max.jsx-1967116149 .input-range__label-container.jsx-1967116149{left:50%;}", ".input-range__track.jsx-1967116149{background:#eeeeee;border-radius:0.3rem;cursor:pointer;display:block;height:0.3rem;position:relative;-webkit-transition:left 0.3s ease-out,width 0.3s ease-out;transition:left 0.3s ease-out,width 0.3s ease-out;}", ".input-range--disabled.jsx-1967116149 .input-range__track.jsx-1967116149{background:#eeeeee;}", ".input-range__track--background.jsx-1967116149{left:0;margin-top:-0.15rem;position:absolute;right:0;top:50%;}", ".input-range__track--active.jsx-1967116149{background:var(--color3);}", ".input-range.jsx-1967116149{height:1rem;position:relative;margin-top:1.2em;margin-bottom:1.4em;}", ".Popover.jsx-1967116149{z-index:2000;}", ".Popover-body.jsx-1967116149{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:.5rem 1rem;background:white;border-radius:0.3rem;opacity:.95;box-shadow:rgba(0,0,0,0.12) 0 1px 6px,rgba(0,0,0,0.12) 0 1px 4px;font-size:14px;}", ".Popover-tipShape.jsx-1967116149{fill:" + backGroundBlue + ";}", ".Popover-white.jsx-1967116149 .Popover-tipShape.jsx-1967116149{fill:#00bcd4;}", ".Popover-white.jsx-1967116149 .Popover-body.jsx-1967116149{background:white;}", ".btn.jsx-1967116149{color:white;background-color:black;margin-bottom:30px;height:30px;width:50px;}", ".dropdown.jsx-1967116149{display:inline-block;width:182px;}", ".dropdown-content.jsx-1967116149{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}", ".dropdown-content.jsx-1967116149 input.radio.jsx-1967116149{color:black;padding:12px 16px;text-decoration:none;display:block;}", ".btns.jsx-1967116149{background-color:#ddd;}", ".dropdown.jsx-1967116149:hover .dropdown-content.jsx-1967116149{display:block;}", ".dropdown.jsx-1967116149:hover .group.jsx-1967116149{background-color:var(--color3);color:var(--color1);}", ".dropbtn.jsx-1967116149{width:130px;position:absolute;top:20px;left:20px;}", ".label.jsx-1967116149{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color1);}", "body.jsx-1967116149{background-color:var(--color2);}", ".jsx-1967116149:root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}"];
-Style.__scopedHash = "1967116149";
+Style.__hash = "3753100428";
+Style.__scoped = [".jsx-2419313965{padding:10px;font-size:16px;font-weight:bold;border:none;width:182px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".input-range__slider.jsx-2419313965{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:var(--color2);border:1px solid var(--color1);border-radius:100%;cursor:pointer;display:block;height:1rem;margin-left:-0.5rem;margin-top:-0.65rem;outline:none;position:absolute;top:50%;-webkit-transition:-webkit-transform 0.3s ease-out,box-shadow 0.3s ease-out;-webkit-transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;A width:1rem;}", ".input-range__slider.jsx-2419313965:active{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}", ".input-range__slider.jsx-2419313965:focus{box-shadow:0 0 0 5px rgba(63,81,181,0.2);}", ".input-range--disabled.jsx-2419313965 .input-range__slider.jsx-2419313965{background:#cccccc;border:1px solid #cccccc;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}", ".input-range__slider-container.jsx-2419313965{-webkit-transition:left 0.3s ease-out;transition:left 0.3s ease-out;}", ".input-range__label.jsx-2419313965{color:var(--color3);font-size:0.8rem;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);white-space:nowrap;}", ".input-range__label--min.jsx-2419313965,.input-range__label--max.jsx-2419313965{bottom:-1.4rem;position:absolute;}", ".input-range__label--min.jsx-2419313965{left:0;}", ".input-range__label--max.jsx-2419313965{right:0;}", ".input-range__label--value.jsx-2419313965{position:absolute;top:-1.8rem;}", ".input-range__label-container.jsx-2419313965{left:-50%;position:relative;}", ".input-range__label--max.jsx-2419313965 .input-range__label-container.jsx-2419313965{left:50%;}", ".input-range__track.jsx-2419313965{background:#eeeeee;border-radius:0.3rem;cursor:pointer;display:block;height:0.3rem;position:relative;-webkit-transition:left 0.3s ease-out,width 0.3s ease-out;transition:left 0.3s ease-out,width 0.3s ease-out;}", ".input-range--disabled.jsx-2419313965 .input-range__track.jsx-2419313965{background:#eeeeee;}", ".input-range__track--background.jsx-2419313965{left:0;margin-top:-0.15rem;position:absolute;right:0;top:50%;}", ".input-range__track--active.jsx-2419313965{background:var(--color3);}", ".input-range.jsx-2419313965{height:1rem;position:relative;margin-top:1.2em;margin-bottom:1.4em;}", ".Popover.jsx-2419313965{z-index:2000;}", ".Popover-body.jsx-2419313965{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:.5rem 1rem;background:white;border-radius:0.3rem;opacity:.95;box-shadow:rgba(0,0,0,0.12) 0 1px 6px,rgba(0,0,0,0.12) 0 1px 4px;font-size:14px;}", ".Popover-tipShape.jsx-2419313965{fill:" + backGroundBlue + ";}", ".Popover-white.jsx-2419313965 .Popover-tipShape.jsx-2419313965{fill:#00bcd4;}", ".Popover-white.jsx-2419313965 .Popover-body.jsx-2419313965{background:white;}", ".btn.jsx-2419313965{color:white;background-color:black;margin-bottom:30px;height:30px;width:50px;}", ".dropdown.jsx-2419313965{display:inline-block;width:182px;}", ".dropdown-content.jsx-2419313965{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}", ".dropdown-content.jsx-2419313965 input.radio.jsx-2419313965{color:black;padding:12px 16px;text-decoration:none;display:block;}", ".btns.jsx-2419313965{background-color:#ddd;}", ".dropdown.jsx-2419313965:hover .dropdown-content.jsx-2419313965{display:block;}", ".dropdown.jsx-2419313965:hover .group.jsx-2419313965{background-color:var(--color3);color:var(--color1);}", ".dropbtn.jsx-2419313965{width:130px;position:absolute;top:20px;left:20px;}", ".label.jsx-2419313965{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color1);}", "body.jsx-2419313965{background-color:var(--color2);}", ".get-started.jsx-2419313965{margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;background-color:var(--color3);box-shadow:0 2px 4px 0 var(--color3).darken(0.5).hsl().string();}", ".get-started.jsx-2419313965:active{-webkit-transform:translate(0px,5px);-ms-transform:translate(0px,5px);transform:translate(0px,5px);box-shadow:0 1px 0 0;margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;}", ".jsx-2419313965:root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}"];
+Style.__scopedHash = "2419313965";
 /* harmony default export */ var input_range_style = (Style);
 // CONCATENATED MODULE: ./sudoku.js
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -663,6 +663,8 @@ var pages_GenerationUI = function (_Component) {
     var _this = pages__possibleConstructorReturn(this, (GenerationUI.__proto__ || Object.getPrototypeOf(GenerationUI)).call(this, props));
 
     _this.generateGame = function () {
+      console.log('hello');
+      console.log('this is value: ', _this.state.value);
       _this.props.generateGame(_this.state.value);
     };
 
@@ -726,97 +728,104 @@ var pages_GenerationUI = function (_Component) {
       return external__react__default.a.createElement(
         'div',
         {
-          className: 'jsx-880653159' + ' ' + 'generation'
+          className: 'jsx-2267439788' + ' ' + 'generation'
         },
         external__react__default.a.createElement(
           'div',
           {
-            className: 'jsx-880653159' + ' ' + 'dropdown'
+            className: 'jsx-2267439788' + ' ' + 'dropdown'
           },
           external__react__default.a.createElement(
             'button',
-            { 'class': 'dropbtn btn', className: 'jsx-880653159'
+            {
+              className: 'jsx-2267439788' + ' ' + 'dropbtn btn'
             },
             'Select a color theme'
           ),
           external__react__default.a.createElement(
             'div',
-            { 'class': 'dropdown-content', className: 'jsx-880653159'
+            {
+              className: 'jsx-2267439788' + ' ' + 'dropdown-content'
             },
             external__react__default.a.createElement(
               'div',
-              { 'class': 'group', className: 'jsx-880653159'
+              { 'class': 'group', className: 'jsx-2267439788'
               },
-              external__react__default.a.createElement('input', { 'class': 'btns', onClick: this.handler, type: 'radio', name: 'btns', id: 'green', className: 'jsx-880653159'
+              external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'green', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'class': 'label', 'for': 'green', className: 'jsx-880653159'
+                { 'for': 'green', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Green'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              { 'class': 'group', className: 'jsx-880653159'
+              {
+                className: 'jsx-2267439788' + ' ' + 'group'
               },
-              external__react__default.a.createElement('input', { 'class': 'btns', onClick: this.handler, type: 'radio', name: 'btns', id: 'blue', className: 'jsx-880653159'
+              external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'blue', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'class': 'label', 'for': 'blue', className: 'jsx-880653159'
+                { 'for': 'blue', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Blue'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              { 'class': 'group', className: 'jsx-880653159'
+              {
+                className: 'jsx-2267439788' + ' ' + 'group'
               },
-              external__react__default.a.createElement('input', { 'class': 'btns', onClick: this.handler, type: 'radio', name: 'btns', id: 'purple', className: 'jsx-880653159'
+              external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'purple', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'class': 'label', 'for': 'purple', className: 'jsx-880653159'
+                { 'for': 'purple', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Purple'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              { 'class': 'group', className: 'jsx-880653159'
+              {
+                className: 'jsx-2267439788' + ' ' + 'group'
               },
-              external__react__default.a.createElement('input', { 'class': 'btns', onClick: this.handler, type: 'radio', name: 'btns', id: 'red', className: 'jsx-880653159'
+              external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'red', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'class': 'label', 'for': 'red', className: 'jsx-880653159'
+                { 'for': 'red', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Red'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              { 'class': 'group', className: 'jsx-880653159'
+              {
+                className: 'jsx-2267439788' + ' ' + 'group'
               },
-              external__react__default.a.createElement('input', { 'class': 'btns', onClick: this.handler, type: 'radio', name: 'btns', id: 'orange', className: 'jsx-880653159'
+              external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'orange', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'class': 'label', 'for': 'orange', className: 'jsx-880653159'
+                { 'for': 'orange', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Orange'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              { 'class': 'group', className: 'jsx-880653159'
+              {
+                className: 'jsx-2267439788' + ' ' + 'group'
               },
-              external__react__default.a.createElement('input', { 'class': 'btns', onClick: this.handler, type: 'radio', name: 'btns', id: 'yellow', className: 'jsx-880653159'
+              external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'yellow', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'class': 'label', 'for': 'yellow', className: 'jsx-880653159'
+                { 'for': 'yellow', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Yellow'
               )
@@ -826,7 +835,7 @@ var pages_GenerationUI = function (_Component) {
         external__react__default.a.createElement(
           'div',
           {
-            className: 'jsx-880653159' + ' ' + 'copy'
+            className: 'jsx-2267439788' + ' ' + 'copy'
           },
           'Start with ',
           this.state.value,
@@ -842,13 +851,13 @@ var pages_GenerationUI = function (_Component) {
         }),
         external__react__default.a.createElement(
           'div',
-          { onClick: this.generateGame, className: 'jsx-880653159' + ' ' + 'button'
+          { onClick: this.generateGame, className: 'jsx-2267439788' + ' ' + 'get-started'
           },
           'Play Sudoku'
         ),
         external__react__default.a.createElement(style__default.a, {
-          styleId: '880653159',
-          css: ['.jsx-880653159{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}', '.copy.jsx-880653159{text-align:center;font-size:1.3em;margin-bottom:.5em;color:var(--color3);}', '.generation.jsx-880653159{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}', '.input-range{width:80%;max-width:500px;}', '@import \'./vars.css\' :root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}/*|*/.button.jsx-880653159{margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;}', '.button.jsx-880653159:active{-webkit-transform:translate(0px,5px);-ms-transform:translate(0px,5px);transform:translate(0px,5px);box-shadow:0 1px 0 0;}', '.button.jsx-880653159{background-color:var(--color3);box-shadow:0 2px 4px 0 var(--color3).darken(0.5).hsl().string();}', '.button.jsx-880653159:hover{background-color:var(--color3).lighten(0.2).hsl().string();}', 'body.jsx-880653159{background-color:var(--color3);}']
+          styleId: '2267439788',
+          css: ['.copy.jsx-2267439788{text-align:center;font-size:1.3em;margin-bottom:.5em;color:var(--color3);}', '.generation.jsx-2267439788{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}', '.input-range{width:80%;max-width:500px;}', '@import \'./vars.css\' :root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}/*|*/body.jsx-2267439788{background-color:var(--color3);}', '.dropdown-content.jsx-2267439788{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}', '.dropdown-content.jsx-2267439788:active{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}']
         })
       );
     }
@@ -1419,27 +1428,27 @@ var pages_Index = function (_Component2) {
       return external__react__default.a.createElement(
         'div',
         {
-          className: 'jsx-2674102191' + ' ' + 'header'
+          className: 'jsx-1237319047' + ' ' + 'header'
         },
         external__react__default.a.createElement(
           'div',
           { onClick: function onClick() {
               return _this7.setState({ board: false });
-            }, className: 'jsx-2674102191' + ' ' + 'new-game'
+            }, className: 'jsx-1237319047' + ' ' + 'new-game'
           },
           external__react__default.a.createElement(pages_ReturnIcon, null),
           external__react__default.a.createElement(
             'div',
             {
-              className: 'jsx-2674102191'
+              className: 'jsx-1237319047'
             },
             'New Game'
           )
         ),
         external__react__default.a.createElement(tool_tip, null),
         external__react__default.a.createElement(style__default.a, {
-          styleId: '2674102191',
-          css: ['.jsx-2674102191{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}', '.header.jsx-2674102191{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;max-width:500px;padding:0 0.5em;box-sizing:border-box;}', '.new-game.jsx-2674102191{cursor:pointer;margin-top:.2em;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:.2em 0;color:white;}', '.new-game.jsx-2674102191 svg{height:1em;margin-bottom:.3em;}', '.button.jsx-2674102191{margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;}', '.button.jsx-2674102191:active{-webkit-transform:translate(0px,5px);-ms-transform:translate(0px,5px);transform:translate(0px,5px);box-shadow:0 1px 0 0;}', '.button.jsx-2674102191{background-color:var(--color3);box-shadow:0 2px 4px 0 var(--color3).darken(0.5).hsl().string();}', '.button.jsx-2674102191:hover{background-color:var(--color3).lighten(0.2).hsl().string();}', 'body.jsx-2674102191{background-color:var(--color3);}']
+          styleId: '1237319047',
+          css: ['.header.jsx-1237319047{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;max-width:500px;padding:0 0.5em;box-sizing:border-box;}', '.new-game.jsx-1237319047{cursor:pointer;margin-top:.2em;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:.2em 0;color:white;}', '.new-game.jsx-1237319047 svg{height:1em;margin-bottom:.3em;}', '.get-started.jsx-1237319047:hover{background-color:var(--color3).lighten(0.2).hsl().string();}', 'body.jsx-1237319047{background-color:var(--color3);}']
         })
       );
     }
@@ -1451,7 +1460,7 @@ var pages_Index = function (_Component2) {
       return external__react__default.a.createElement(
         'div',
         {
-          className: 'jsx-1486552073' + ' ' + 'body'
+          className: 'jsx-1623102857' + ' ' + 'body'
         },
         external__react__default.a.createElement(
           head__default.a,
@@ -1459,25 +1468,25 @@ var pages_Index = function (_Component2) {
           external__react__default.a.createElement(
             'title',
             {
-              className: 'jsx-1486552073'
+              className: 'jsx-1623102857'
             },
             'Sudoku Evolved'
           ),
-          external__react__default.a.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0, width=device-width', className: 'jsx-1486552073'
+          external__react__default.a.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0, width=device-width', className: 'jsx-1623102857'
           }),
-          external__react__default.a.createElement('meta', { name: 'description', content: Description, className: 'jsx-1486552073'
+          external__react__default.a.createElement('meta', { name: 'description', content: Description, className: 'jsx-1623102857'
           }),
-          external__react__default.a.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Special+Elite', rel: 'stylesheet', className: 'jsx-1486552073'
+          external__react__default.a.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Special+Elite', rel: 'stylesheet', className: 'jsx-1623102857'
           }),
-          external__react__default.a.createElement('meta', { property: 'og:url', content: 'https://sudoku.sitianliu.com/', className: 'jsx-1486552073'
+          external__react__default.a.createElement('meta', { property: 'og:url', content: 'https://sudoku.sitianliu.com/', className: 'jsx-1623102857'
           }),
-          external__react__default.a.createElement('meta', { property: 'og:title', content: 'Sudoku Evolved', className: 'jsx-1486552073'
+          external__react__default.a.createElement('meta', { property: 'og:title', content: 'Sudoku Evolved', className: 'jsx-1623102857'
           }),
-          external__react__default.a.createElement('meta', { property: 'og:type', content: 'website', className: 'jsx-1486552073'
+          external__react__default.a.createElement('meta', { property: 'og:type', content: 'website', className: 'jsx-1623102857'
           }),
-          external__react__default.a.createElement('meta', { property: 'og:description', content: Description, className: 'jsx-1486552073'
+          external__react__default.a.createElement('meta', { property: 'og:description', content: Description, className: 'jsx-1623102857'
           }),
-          external__react__default.a.createElement('meta', { property: 'og:image', content: 'https://sudoku.sitianliu.com/static/og-image.png', className: 'jsx-1486552073'
+          external__react__default.a.createElement('meta', { property: 'og:image', content: 'https://sudoku.sitianliu.com/static/og-image.png', className: 'jsx-1623102857'
           })
         ),
         !board && this.renderGenerationUI(),
@@ -1485,11 +1494,11 @@ var pages_Index = function (_Component2) {
         board && this.renderPuzzle(),
         board && this.renderControls(),
         external__react__default.a.createElement('div', {
-          className: 'jsx-1486552073' + ' ' + 'rooter'
+          className: 'jsx-1623102857' + ' ' + 'rooter'
         }),
         external__react__default.a.createElement(style__default.a, {
-          styleId: '1486552073',
-          css: ['body,.body.jsx-1486552073{font-family:\'Special Elite\',cursive;}', '.body.jsx-1486552073{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;height:100vh;width:100vw;position:relative;background:var(--color2);}', '@media (min-width:800px) and (min-height:930px){.header,.puzzle,.controls{font-size:1.5em;}}', '@media (max-width:800px) and (min-width:600px){.header,.puzzle,.controls{font-size:1.2em;}}', '@media (max-height:930px) and (min-height:800px) and (min-width:600px){.header,.puzzle,.controls{font-size:1.2em;}}', '@media (max-height:800px) and (min-height:600px) and (min-width:370px){.header,.puzzle,.controls{font-size:1em;}}', '@media (max-width:370px){.header,.puzzle,.controls{font-size:.8em;}}', '@media (max-height:600px){.header,.puzzle,.controls{font-size:.8em;}}', 'body{margin:0;}', '.rooter.jsx-1486552073{position:fixed;bottom:0;font-size:.8em;width:100%;text-align:center;}', '.dropdown.jsx-1486552073{display:inline-block;width:182px;}', '.dropdown-content.jsx-1486552073{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}', '.dropdown-content.jsx-1486552073 input.radio.jsx-1486552073{color:black;padding:12px 16px;text-decoration:none;display:block;}', '.btns.jsx-1486552073{background-color:#ddd;}', '.dropdown.jsx-1486552073:hover .dropdown-content.jsx-1486552073{display:block;}', '.dropdown.jsx-1486552073:hover .group.jsx-1486552073{background-color:var(--color3);color:var(--color1);}', '.dropbtn.jsx-1486552073{width:130px;position:absolute;top:20px;left:20px;}', '.label.jsx-1486552073{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color2);}']
+          styleId: '1623102857',
+          css: ['body,.body.jsx-1623102857{font-family:\'Special Elite\',cursive;}', '.body.jsx-1623102857{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;height:100vh;width:100vw;position:relative;background:var(--color2);}', '@media (min-width:800px) and (min-height:930px){.header,.puzzle,.controls{font-size:1.5em;}}', '@media (max-width:800px) and (min-width:600px){.header,.puzzle,.controls{font-size:1.2em;}}', '@media (max-height:930px) and (min-height:800px) and (min-width:600px){.header,.puzzle,.controls{font-size:1.2em;}}', '@media (max-height:800px) and (min-height:600px) and (min-width:370px){.header,.puzzle,.controls{font-size:1em;}}', '@media (max-width:370px){.header,.puzzle,.controls{font-size:.8em;}}', '@media (max-height:600px){.header,.puzzle,.controls{font-size:.8em;}}', 'body{margin:0;}', '.rooter.jsx-1623102857{position:fixed;bottom:0;font-size:.8em;width:100%;text-align:center;}']
         }),
         external__react__default.a.createElement(style__default.a, {
           styleId: input_range_style.__hash,

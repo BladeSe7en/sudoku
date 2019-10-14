@@ -20,7 +20,7 @@ const Style = css`
   outline: none;
   position: absolute;
   top: 50%;
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;A
   width: 1rem; }
   .input-range__slider:active {
     transform: scale(1.3); }
@@ -182,6 +182,38 @@ display: block;
 
 body {
   background-color: var(--color2)
+}
+.get-started {
+  margin-top: .5em;
+  border-radius: .25em;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  transition: all .25s;
+  padding: 5px 10px;
+  font-size: 1.4em;
+  background-color: var(--color3);
+  box-shadow: 0 2px 4px 0 var(--color3).darken(0.5).hsl().string()};
+  display: flex;
+  align-items: center;
+}
+.get-started:active {
+  transform: translate(0px, 5px);
+  box-shadow: 0 1px 0 0;
+  margin-top: .5em;
+  border-radius: .25em;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  transition: all .25s;
+  padding: 5px 10px;
+  font-size: 1.4em;
 }
 
 :root {

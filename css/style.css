@@ -7,3 +7,61 @@
 body {
     background-color: black;
 }
+
+.get-started {
+    margin-top: .5em;
+    border-radius: .25em;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    transition: all .25s;
+    padding: 5px 10px;
+    font-size: 1.4em;
+    background-color: var(--color3);
+    box-shadow: 0 2px 4px 0 var(--color3);
+    display: flex;
+    align-items: center;
+  }
+
+  .get-started:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0 1px 0 0;
+    margin-top: .5em;
+    border-radius: .25em;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    transition: all .25s;
+    padding: 5px 10px;
+    font-size: 1.4em;
+  }
+
+  .dropdown-content {
+    left: 20px;
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+  
+  }
+
+  .dropdown-content:active {
+    left: 20px;
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+  
+  }

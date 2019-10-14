@@ -217,6 +217,8 @@ class GenerationUI extends Component {
   }
 
   generateGame = () => {
+    console.log('hello')
+    console.log('this is value: ',this.state.value)
     this.props.generateGame(this.state.value);
   }
 
@@ -274,31 +276,31 @@ handler = (e) => {
     return (
       <div className="generation">
         <div className="dropdown">
-          <button class="dropbtn btn">Select a color theme</button>
-          <div class="dropdown-content">
+          <button className="dropbtn btn">Select a color theme</button>
+          <div className="dropdown-content">
             <div class='group'>
-              <input class='btns'  onClick={this.handler} type="radio" name="btns" id="green" />
-              <label class='label' for="green">Green</label>
+              <input className='btns'  onClick={this.handler} type="radio" name="btns" id="green" />
+              <label className='label' for="green">Green</label>
             </div>
-            <div class='group'>
-              <input class='btns' onClick={this.handler} type="radio" name="btns" id="blue" />
-              <label class='label' for="blue">Blue</label>
+            <div className='group'>
+              <input className='btns' onClick={this.handler} type="radio" name="btns" id="blue" />
+              <label className='label' for="blue">Blue</label>
             </div>
-            <div class='group'>
-              <input class='btns' onClick={this.handler} type="radio" name="btns" id="purple" />
-              <label class='label' for="purple">Purple</label>
+            <div className='group'>
+              <input className='btns' onClick={this.handler} type="radio" name="btns" id="purple" />
+              <label className='label' for="purple">Purple</label>
             </div>
-            <div class='group'>
-              <input class='btns' onClick={this.handler} type="radio" name="btns" id="red" />
-              <label class='label' for="red">Red</label>
+            <div className='group'>
+              <input className='btns' onClick={this.handler} type="radio" name="btns" id="red" />
+              <label className='label' for="red">Red</label>
             </div>
-            <div class='group'>
-              <input class='btns' onClick={this.handler} type="radio" name="btns" id="orange" />
-              <label class='label' for="orange">Orange</label>
+            <div className='group'>
+              <input className='btns' onClick={this.handler} type="radio" name="btns" id="orange" />
+              <label className='label' for="orange">Orange</label>
             </div>
-            <div class='group'>
-              <input class='btns' onClick={this.handler} type="radio" name="btns" id="yellow" />
-              <label class='label' for="yellow">Yellow</label>
+            <div className='group'>
+              <input className='btns' onClick={this.handler} type="radio" name="btns" id="yellow" />
+              <label className='label' for="yellow">Yellow</label>
             </div>
           </div>
         </div>
@@ -309,7 +311,7 @@ handler = (e) => {
           value={this.state.value}
           onChange={value => this.setState({ value })}
         />
-        <div className="button" onClick={this.generateGame}>Play Sudoku</div>
+        <div className="get-started" onClick={this.generateGame}>Play Sudoku</div>
         { /* language=CSS */ }
         <style jsx>{`
             .copy {
@@ -337,36 +339,34 @@ handler = (e) => {
               --color3: rgb(0,255,0);
           }
 
-            .button {
-              margin-top: .5em;
-              border-radius: .25em;
-              cursor: pointer;
-              font-weight: bold;
-              text-decoration: none;
-              color: #fff;
-              position: relative;
-              display: inline-block;
-              transition: all .25s;
-              padding: 5px 10px;
-              font-size: 1.4em;
-            }
-            .button:active {
-              transform: translate(0px, 5px);
-              box-shadow: 0 1px 0 0;
-            }
-
-            .button {
-              background-color: var(--color3);
-              box-shadow: 0 2px 4px 0 var(--color3).darken(0.5).hsl().string()};
-              display: flex;
-              align-items: center;
-            }
-
-            .button:hover {
-              background-color: var(--color3).lighten(0.2).hsl().string()};
-            }
+          
             body {
               background-color: var(--color3)
+            }
+
+
+            .dropdown-content {
+              left: 20px;
+              display: none;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              position: absolute;
+              top: 50px;
+            
+            }
+          
+            .dropdown-content:active {
+              left: 20px;
+              display: none;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              position: absolute;
+              top: 50px;
+            
             }
         `}
         </style>
@@ -883,32 +883,11 @@ export default class Index extends Component {
                 height: 1em;
                 margin-bottom: .3em;
             }
-            .button {
-              margin-top: .5em;
-              border-radius: .25em;
-              cursor: pointer;
-              font-weight: bold;
-              text-decoration: none;
-              color: #fff;
-              position: relative;
-              display: inline-block;
-              transition: all .25s;
-              padding: 5px 10px;
-              font-size: 1.4em;
-            }
-            .button:active {
-              transform: translate(0px, 5px);
-              box-shadow: 0 1px 0 0;
-            }
+            
 
-            .button {
-              background-color: var(--color3);
-              box-shadow: 0 2px 4px 0 var(--color3).darken(0.5).hsl().string()};
-              display: flex;
-              align-items: center;
-            }
+            
 
-            .button:hover {
+            .get-started:hover {
               background-color: var(--color3).lighten(0.2).hsl().string()};
             }
             body {
@@ -998,54 +977,7 @@ export default class Index extends Component {
                 width: 100%;
                 text-align: center;
             }
-            .dropdown {
-              display: inline-block;
-              width: 182px;
-              }
-              
-              .dropdown-content {
-                left: 20px;
-                display: none;
-                background-color: #f1f1f1;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-                position: absolute;
-                top: 50px;
-              
-              }
-              
-              .dropdown-content input.radio {
-              color: black;
-              padding: 12px 16px;
-              text-decoration: none;
-              display: block;
-              }
-              
-              .btns {background-color: #ddd;}
-              
-              .dropdown:hover .dropdown-content {display: block;}
-              
-              .dropdown:hover .group {
-                background-color: var(--color3);
-                color: var(--color1);
-              }
-              
-              .dropbtn {
-                width: 130px;
-                position: absolute;
-                top: 20px;
-                left: 20px;
-              }
-              
-              .label {
-                display: inline-block;
-                width: 100px;
-                text-align: center;
-                font-size: 30px;
-                margin-top: 10px;
-                color: var(--color2);
-              }
+          
               
         `}
         </style>
