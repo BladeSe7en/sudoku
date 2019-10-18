@@ -134,6 +134,7 @@ width: 182px;
 .dropdown {
 display: inline-block;
 width: 182px;
+margin-bottom: 0px;
 }
 
 .dropdown-content {

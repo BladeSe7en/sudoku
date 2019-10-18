@@ -141,11 +141,11 @@ var color3 = '##009600';
 2;
 // eslint-dis3ble-next-line no-l3ne-blocks
 {/* language=CSS */}
-var Style = ["{padding:10px;font-size:16px;font-weight:bold;border:none;width:182px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".input-range__slider{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:var(--color2);border:1px solid var(--color1);border-radius:100%;cursor:pointer;display:block;height:1rem;margin-left:-0.5rem;margin-top:-0.65rem;outline:none;position:absolute;top:50%;-webkit-transition:-webkit-transform 0.3s ease-out,box-shadow 0.3s ease-out;-webkit-transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;A width:1rem;}", ".input-range__slider:active{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}", ".input-range__slider:focus{box-shadow:0 0 0 5px rgba(63,81,181,0.2);}", ".input-range--disabled .input-range__slider{background:#cccccc;border:1px solid #cccccc;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}", ".input-range__slider-container{-webkit-transition:left 0.3s ease-out;transition:left 0.3s ease-out;}", ".input-range__label{color:var(--color3);font-size:0.8rem;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);white-space:nowrap;}", ".input-range__label--min,.input-range__label--max{bottom:-1.4rem;position:absolute;}", ".input-range__label--min{left:0;}", ".input-range__label--max{right:0;}", ".input-range__label--value{position:absolute;top:-1.8rem;}", ".input-range__label-container{left:-50%;position:relative;}", ".input-range__label--max .input-range__label-container{left:50%;}", ".input-range__track{background:#eeeeee;border-radius:0.3rem;cursor:pointer;display:block;height:0.3rem;position:relative;-webkit-transition:left 0.3s ease-out,width 0.3s ease-out;transition:left 0.3s ease-out,width 0.3s ease-out;}", ".input-range--disabled .input-range__track{background:#eeeeee;}", ".input-range__track--background{left:0;margin-top:-0.15rem;position:absolute;right:0;top:50%;}", ".input-range__track--active{background:var(--color3);}", ".input-range{height:1rem;position:relative;margin-top:1.2em;margin-bottom:1.4em;}", ".Popover{z-index:2000;}", ".Popover-body{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:.5rem 1rem;background:white;border-radius:0.3rem;opacity:.95;box-shadow:rgba(0,0,0,0.12) 0 1px 6px,rgba(0,0,0,0.12) 0 1px 4px;font-size:14px;}", ".Popover-tipShape{fill:" + backGroundBlue + ";}", ".Popover-white .Popover-tipShape{fill:#00bcd4;}", ".Popover-white .Popover-body{background:white;}", ".btn{color:white;background-color:black;margin-bottom:30px;height:30px;width:50px;}", ".dropdown{display:inline-block;width:182px;}", ".dropdown-content{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}", ".dropdown-content input.radio{color:black;padding:12px 16px;text-decoration:none;display:block;}", ".btns{background-color:#ddd;}", ".dropdown:hover .dropdown-content{display:block;}", ".dropdown:hover .group{background-color:var(--color3);color:var(--color1);}", ".dropbtn{width:130px;position:absolute;top:20px;left:20px;}", ".label{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color1);}", "body{background-color:var(--color2);}", ".get-started{margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;background-color:var(--color3);box-shadow:0 2px 4px 0 var(--color3).darken(0.5).hsl().string();}", ".get-started:active{-webkit-transform:translate(0px,5px);-ms-transform:translate(0px,5px);transform:translate(0px,5px);box-shadow:0 1px 0 0;margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;}", ":root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}"];
+var Style = ["{padding:10px;font-size:16px;font-weight:bold;border:none;width:182px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".input-range__slider{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:var(--color2);border:1px solid var(--color1);border-radius:100%;cursor:pointer;display:block;height:1rem;margin-left:-0.5rem;margin-top:-0.65rem;outline:none;position:absolute;top:50%;-webkit-transition:-webkit-transform 0.3s ease-out,box-shadow 0.3s ease-out;-webkit-transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;A width:1rem;}", ".input-range__slider:active{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}", ".input-range__slider:focus{box-shadow:0 0 0 5px rgba(63,81,181,0.2);}", ".input-range--disabled .input-range__slider{background:#cccccc;border:1px solid #cccccc;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}", ".input-range__slider-container{-webkit-transition:left 0.3s ease-out;transition:left 0.3s ease-out;}", ".input-range__label{color:var(--color3);font-size:0.8rem;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);white-space:nowrap;}", ".input-range__label--min,.input-range__label--max{bottom:-1.4rem;position:absolute;}", ".input-range__label--min{left:0;}", ".input-range__label--max{right:0;}", ".input-range__label--value{position:absolute;top:-1.8rem;}", ".input-range__label-container{left:-50%;position:relative;}", ".input-range__label--max .input-range__label-container{left:50%;}", ".input-range__track{background:#eeeeee;border-radius:0.3rem;cursor:pointer;display:block;height:0.3rem;position:relative;-webkit-transition:left 0.3s ease-out,width 0.3s ease-out;transition:left 0.3s ease-out,width 0.3s ease-out;}", ".input-range--disabled .input-range__track{background:#eeeeee;}", ".input-range__track--background{left:0;margin-top:-0.15rem;position:absolute;right:0;top:50%;}", ".input-range__track--active{background:var(--color3);}", ".input-range{height:1rem;position:relative;margin-top:1.2em;margin-bottom:1.4em;}", ".Popover{z-index:2000;}", ".Popover-body{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:.5rem 1rem;background:white;border-radius:0.3rem;opacity:.95;box-shadow:rgba(0,0,0,0.12) 0 1px 6px,rgba(0,0,0,0.12) 0 1px 4px;font-size:14px;}", ".Popover-tipShape{fill:" + backGroundBlue + ";}", ".Popover-white .Popover-tipShape{fill:#00bcd4;}", ".Popover-white .Popover-body{background:white;}", ".btn{color:white;background-color:black;margin-bottom:30px;height:30px;width:50px;}", ".dropdown{display:inline-block;width:182px;margin-bottom:0px;}", ".dropdown-content{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}", ".dropdown-content input.radio{color:black;padding:12px 16px;text-decoration:none;display:block;}", ".btns{background-color:#ddd;}", ".dropdown:hover .dropdown-content{display:block;}", ".dropdown:hover .group{background-color:var(--color3);color:var(--color1);}", ".dropbtn{width:130px;position:absolute;top:20px;left:20px;}", ".label{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color1);}", "body{background-color:var(--color2);}", ".get-started{margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;background-color:var(--color3);box-shadow:0 2px 4px 0 var(--color3).darken(0.5).hsl().string();}", ".get-started:active{-webkit-transform:translate(0px,5px);-ms-transform:translate(0px,5px);transform:translate(0px,5px);box-shadow:0 1px 0 0;margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;}", ":root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}"];
 
-Style.__hash = "3753100428";
-Style.__scoped = [".jsx-2419313965{padding:10px;font-size:16px;font-weight:bold;border:none;width:182px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".input-range__slider.jsx-2419313965{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:var(--color2);border:1px solid var(--color1);border-radius:100%;cursor:pointer;display:block;height:1rem;margin-left:-0.5rem;margin-top:-0.65rem;outline:none;position:absolute;top:50%;-webkit-transition:-webkit-transform 0.3s ease-out,box-shadow 0.3s ease-out;-webkit-transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;A width:1rem;}", ".input-range__slider.jsx-2419313965:active{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}", ".input-range__slider.jsx-2419313965:focus{box-shadow:0 0 0 5px rgba(63,81,181,0.2);}", ".input-range--disabled.jsx-2419313965 .input-range__slider.jsx-2419313965{background:#cccccc;border:1px solid #cccccc;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}", ".input-range__slider-container.jsx-2419313965{-webkit-transition:left 0.3s ease-out;transition:left 0.3s ease-out;}", ".input-range__label.jsx-2419313965{color:var(--color3);font-size:0.8rem;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);white-space:nowrap;}", ".input-range__label--min.jsx-2419313965,.input-range__label--max.jsx-2419313965{bottom:-1.4rem;position:absolute;}", ".input-range__label--min.jsx-2419313965{left:0;}", ".input-range__label--max.jsx-2419313965{right:0;}", ".input-range__label--value.jsx-2419313965{position:absolute;top:-1.8rem;}", ".input-range__label-container.jsx-2419313965{left:-50%;position:relative;}", ".input-range__label--max.jsx-2419313965 .input-range__label-container.jsx-2419313965{left:50%;}", ".input-range__track.jsx-2419313965{background:#eeeeee;border-radius:0.3rem;cursor:pointer;display:block;height:0.3rem;position:relative;-webkit-transition:left 0.3s ease-out,width 0.3s ease-out;transition:left 0.3s ease-out,width 0.3s ease-out;}", ".input-range--disabled.jsx-2419313965 .input-range__track.jsx-2419313965{background:#eeeeee;}", ".input-range__track--background.jsx-2419313965{left:0;margin-top:-0.15rem;position:absolute;right:0;top:50%;}", ".input-range__track--active.jsx-2419313965{background:var(--color3);}", ".input-range.jsx-2419313965{height:1rem;position:relative;margin-top:1.2em;margin-bottom:1.4em;}", ".Popover.jsx-2419313965{z-index:2000;}", ".Popover-body.jsx-2419313965{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:.5rem 1rem;background:white;border-radius:0.3rem;opacity:.95;box-shadow:rgba(0,0,0,0.12) 0 1px 6px,rgba(0,0,0,0.12) 0 1px 4px;font-size:14px;}", ".Popover-tipShape.jsx-2419313965{fill:" + backGroundBlue + ";}", ".Popover-white.jsx-2419313965 .Popover-tipShape.jsx-2419313965{fill:#00bcd4;}", ".Popover-white.jsx-2419313965 .Popover-body.jsx-2419313965{background:white;}", ".btn.jsx-2419313965{color:white;background-color:black;margin-bottom:30px;height:30px;width:50px;}", ".dropdown.jsx-2419313965{display:inline-block;width:182px;}", ".dropdown-content.jsx-2419313965{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}", ".dropdown-content.jsx-2419313965 input.radio.jsx-2419313965{color:black;padding:12px 16px;text-decoration:none;display:block;}", ".btns.jsx-2419313965{background-color:#ddd;}", ".dropdown.jsx-2419313965:hover .dropdown-content.jsx-2419313965{display:block;}", ".dropdown.jsx-2419313965:hover .group.jsx-2419313965{background-color:var(--color3);color:var(--color1);}", ".dropbtn.jsx-2419313965{width:130px;position:absolute;top:20px;left:20px;}", ".label.jsx-2419313965{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color1);}", "body.jsx-2419313965{background-color:var(--color2);}", ".get-started.jsx-2419313965{margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;background-color:var(--color3);box-shadow:0 2px 4px 0 var(--color3).darken(0.5).hsl().string();}", ".get-started.jsx-2419313965:active{-webkit-transform:translate(0px,5px);-ms-transform:translate(0px,5px);transform:translate(0px,5px);box-shadow:0 1px 0 0;margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;}", ".jsx-2419313965:root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}"];
-Style.__scopedHash = "2419313965";
+Style.__hash = "3091920616";
+Style.__scoped = [".jsx-2924410569{padding:10px;font-size:16px;font-weight:bold;border:none;width:182px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".input-range__slider.jsx-2924410569{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:var(--color2);border:1px solid var(--color1);border-radius:100%;cursor:pointer;display:block;height:1rem;margin-left:-0.5rem;margin-top:-0.65rem;outline:none;position:absolute;top:50%;-webkit-transition:-webkit-transform 0.3s ease-out,box-shadow 0.3s ease-out;-webkit-transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;transition:transform 0.3s ease-out,box-shadow 0.3s ease-out;A width:1rem;}", ".input-range__slider.jsx-2924410569:active{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);}", ".input-range__slider.jsx-2924410569:focus{box-shadow:0 0 0 5px rgba(63,81,181,0.2);}", ".input-range--disabled.jsx-2924410569 .input-range__slider.jsx-2924410569{background:#cccccc;border:1px solid #cccccc;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}", ".input-range__slider-container.jsx-2924410569{-webkit-transition:left 0.3s ease-out;transition:left 0.3s ease-out;}", ".input-range__label.jsx-2924410569{color:var(--color3);font-size:0.8rem;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);white-space:nowrap;}", ".input-range__label--min.jsx-2924410569,.input-range__label--max.jsx-2924410569{bottom:-1.4rem;position:absolute;}", ".input-range__label--min.jsx-2924410569{left:0;}", ".input-range__label--max.jsx-2924410569{right:0;}", ".input-range__label--value.jsx-2924410569{position:absolute;top:-1.8rem;}", ".input-range__label-container.jsx-2924410569{left:-50%;position:relative;}", ".input-range__label--max.jsx-2924410569 .input-range__label-container.jsx-2924410569{left:50%;}", ".input-range__track.jsx-2924410569{background:#eeeeee;border-radius:0.3rem;cursor:pointer;display:block;height:0.3rem;position:relative;-webkit-transition:left 0.3s ease-out,width 0.3s ease-out;transition:left 0.3s ease-out,width 0.3s ease-out;}", ".input-range--disabled.jsx-2924410569 .input-range__track.jsx-2924410569{background:#eeeeee;}", ".input-range__track--background.jsx-2924410569{left:0;margin-top:-0.15rem;position:absolute;right:0;top:50%;}", ".input-range__track--active.jsx-2924410569{background:var(--color3);}", ".input-range.jsx-2924410569{height:1rem;position:relative;margin-top:1.2em;margin-bottom:1.4em;}", ".Popover.jsx-2924410569{z-index:2000;}", ".Popover-body.jsx-2924410569{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:.5rem 1rem;background:white;border-radius:0.3rem;opacity:.95;box-shadow:rgba(0,0,0,0.12) 0 1px 6px,rgba(0,0,0,0.12) 0 1px 4px;font-size:14px;}", ".Popover-tipShape.jsx-2924410569{fill:" + backGroundBlue + ";}", ".Popover-white.jsx-2924410569 .Popover-tipShape.jsx-2924410569{fill:#00bcd4;}", ".Popover-white.jsx-2924410569 .Popover-body.jsx-2924410569{background:white;}", ".btn.jsx-2924410569{color:white;background-color:black;margin-bottom:30px;height:30px;width:50px;}", ".dropdown.jsx-2924410569{display:inline-block;width:182px;margin-bottom:0px;}", ".dropdown-content.jsx-2924410569{left:20px;display:none;background-color:#f1f1f1;min-width:160px;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;position:absolute;top:50px;}", ".dropdown-content.jsx-2924410569 input.radio.jsx-2924410569{color:black;padding:12px 16px;text-decoration:none;display:block;}", ".btns.jsx-2924410569{background-color:#ddd;}", ".dropdown.jsx-2924410569:hover .dropdown-content.jsx-2924410569{display:block;}", ".dropdown.jsx-2924410569:hover .group.jsx-2924410569{background-color:var(--color3);color:var(--color1);}", ".dropbtn.jsx-2924410569{width:130px;position:absolute;top:20px;left:20px;}", ".label.jsx-2924410569{display:inline-block;width:100px;text-align:center;font-size:30px;margin-top:10px;color:var(--color1);}", "body.jsx-2924410569{background-color:var(--color2);}", ".get-started.jsx-2924410569{margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;background-color:var(--color3);box-shadow:0 2px 4px 0 var(--color3).darken(0.5).hsl().string();}", ".get-started.jsx-2924410569:active{-webkit-transform:translate(0px,5px);-ms-transform:translate(0px,5px);transform:translate(0px,5px);box-shadow:0 1px 0 0;margin-top:.5em;border-radius:.25em;cursor:pointer;font-weight:bold;text-decoration:none;color:#fff;position:relative;display:inline-block;-webkit-transition:all .25s;transition:all .25s;padding:5px 10px;font-size:1.4em;}", ".jsx-2924410569:root{--color1:rgb(0,150,0);--color2:rgb(0,100,0);--color3:rgb(0,255,0);}"];
+Style.__scopedHash = "2924410569";
 /* harmony default export */ var input_range_style = (Style);
 // CONCATENATED MODULE: ./sudoku.js
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -430,7 +430,7 @@ var tool_tip_Tip = function (_Component) {
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Tip.__proto__ || Object.getPrototypeOf(Tip)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _this.toggleOpen = function (event) {
       // This prevents ghost click.
-      event.preventDefault();
+      //event.preventDefault();
       _this.setState({ open: !_this.state.open });
     }, _this.close = function () {
       _this.setState({ open: false });
@@ -473,8 +473,6 @@ var tool_tip_Tip = function (_Component) {
 
 /* harmony default export */ var tool_tip = (tool_tip_Tip);
 // CONCATENATED MODULE: ./pages/index.js
-var pages__typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 var pages__createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 
@@ -666,13 +664,21 @@ var pages_GenerationUI = function (_Component) {
       console.log('hello');
       console.log('this is value: ', _this.state.value);
       _this.props.generateGame(_this.state.value);
+      _this.forceUpdate();
     };
 
-    _this.handler = function (e) {
+    _this.handler = _this.handler.bind(_this);
+
+    _this.state = { value: 30 };
+    return _this;
+  }
+
+  pages__createClass(GenerationUI, [{
+    key: 'handler',
+    value: function handler(e) {
+      //handler = (e) => {
       console.log('second e: ', e.target.id);
       var target = e.target.id;
-      console.log('target: ', target);
-      console.log('typeof: ', typeof target === 'undefined' ? 'undefined' : pages__typeof(target));
       var color1 = void 0;
       var color2 = void 0;
       var color3 = void 0;
@@ -714,13 +720,8 @@ var pages_GenerationUI = function (_Component) {
       document.documentElement.style.setProperty('--color1', color1);
       document.documentElement.style.setProperty('--color2', color2);
       document.documentElement.style.setProperty('--color3', color3);
-    };
-
-    _this.state = { value: 30 };
-    return _this;
-  }
-
-  pages__createClass(GenerationUI, [{
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
@@ -749,83 +750,78 @@ var pages_GenerationUI = function (_Component) {
             },
             external__react__default.a.createElement(
               'div',
-              { 'class': 'group', className: 'jsx-2267439788'
+              { onClick: this.handler, id: 'green', className: 'jsx-2267439788' + ' ' + 'group'
               },
               external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'green', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'for': 'green', className: 'jsx-2267439788' + ' ' + 'label'
+                { 'for': 'green', onClick: this.handler, id: 'green', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Green'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              {
-                className: 'jsx-2267439788' + ' ' + 'group'
+              { onClick: this.handler, id: 'blue', className: 'jsx-2267439788' + ' ' + 'group'
               },
               external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'blue', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'for': 'blue', className: 'jsx-2267439788' + ' ' + 'label'
+                { 'for': 'blue', onClick: this.handler, id: 'blue', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Blue'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              {
-                className: 'jsx-2267439788' + ' ' + 'group'
+              { onClick: this.handler, id: 'purple', className: 'jsx-2267439788' + ' ' + 'group'
               },
               external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'purple', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'for': 'purple', className: 'jsx-2267439788' + ' ' + 'label'
+                { 'for': 'purple', onClick: this.handler, id: 'purple', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Purple'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              {
-                className: 'jsx-2267439788' + ' ' + 'group'
+              { onClick: this.handler, id: 'red', className: 'jsx-2267439788' + ' ' + 'group'
               },
               external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'red', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'for': 'red', className: 'jsx-2267439788' + ' ' + 'label'
+                { 'for': 'red', onClick: this.handler, id: 'red', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Red'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              {
-                className: 'jsx-2267439788' + ' ' + 'group'
+              { onClick: this.handler, id: 'orange', className: 'jsx-2267439788' + ' ' + 'group'
               },
               external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'orange', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'for': 'orange', className: 'jsx-2267439788' + ' ' + 'label'
+                { 'for': 'orange', onClick: this.handler, id: 'orange', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Orange'
               )
             ),
             external__react__default.a.createElement(
               'div',
-              {
-                className: 'jsx-2267439788' + ' ' + 'group'
+              { onClick: this.handler, id: 'yellow', className: 'jsx-2267439788' + ' ' + 'group'
               },
               external__react__default.a.createElement('input', { onClick: this.handler, type: 'radio', name: 'btns', id: 'yellow', className: 'jsx-2267439788' + ' ' + 'btns'
               }),
               external__react__default.a.createElement(
                 'label',
-                { 'for': 'yellow', className: 'jsx-2267439788' + ' ' + 'label'
+                { 'for': 'yellow', onClick: this.handler, id: 'yellow', className: 'jsx-2267439788' + ' ' + 'label'
                 },
                 'Yellow'
               )
@@ -1418,7 +1414,7 @@ var pages_Index = function (_Component2) {
   }, {
     key: 'renderGenerationUI',
     value: function renderGenerationUI() {
-      return external__react__default.a.createElement(pages_GenerationUI, { generateGame: this.generateGame });
+      return external__react__default.a.createElement(pages_GenerationUI, { generateGame: this.generateGame, handler: this.handler });
     }
   }, {
     key: 'renderHeader',

@@ -25,7 +25,7 @@ export default class Tip extends Component {
     state = {}
     toggleOpen = (event) => {
       // This prevents ghost click.
-      event.preventDefault();
+      //event.preventDefault();
       this.setState({ open: !this.state.open });
     }
 

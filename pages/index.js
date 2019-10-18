@@ -212,22 +212,23 @@ class GenerationUI extends Component {
   constructor(props) {
     super(props);
 
+    this.handler = this.handler.bind(this);
+
 
     this.state = { value: 30 };
+    this
   }
 
   generateGame = () => {
     console.log('hello')
     console.log('this is value: ',this.state.value)
     this.props.generateGame(this.state.value);
+    this.forceUpdate()
   }
 
-
-handler = (e) => {
+  handler = (e) => {
     console.log('second e: ', e.target.id);
     let target = e.target.id;
-    console.log('target: ',target)
-    console.log('typeof: ',typeof(target))
     let color1;
     let color2;
     let color3;
@@ -241,7 +242,6 @@ handler = (e) => {
         color1 = 'rgb(0,0,150)';
         color2 = 'rgb(155,155,255)';
         color3 = 'rgb(0,0,255)';
-        console.log('this is color2: ',color2)
     }
     if (target == 'purple') {
         color1 = 'rgb(150,0,150)';
@@ -278,29 +278,29 @@ handler = (e) => {
         <div className="dropdown">
           <button className="dropbtn btn">Select a color theme</button>
           <div className="dropdown-content">
-            <div class='group'>
+            <div className='group' onClick={this.handler} id="green">
               <input className='btns'  onClick={this.handler} type="radio" name="btns" id="green" />
-              <label className='label' for="green">Green</label>
+              <label className='label' for="green" onClick={this.handler} id="green">Green</label>
             </div>
-            <div className='group'>
+            <div className='group' onClick={this.handler} id="blue">
               <input className='btns' onClick={this.handler} type="radio" name="btns" id="blue" />
-              <label className='label' for="blue">Blue</label>
+              <label className='label' for="blue" onClick={this.handler} id="blue">Blue</label>
             </div>
-            <div className='group'>
+            <div className='group' onClick={this.handler} id="purple">
               <input className='btns' onClick={this.handler} type="radio" name="btns" id="purple" />
-              <label className='label' for="purple">Purple</label>
+              <label className='label' for="purple" onClick={this.handler} id="purple">Purple</label>
             </div>
-            <div className='group'>
+            <div className='group' onClick={this.handler} id="red">
               <input className='btns' onClick={this.handler} type="radio" name="btns" id="red" />
-              <label className='label' for="red">Red</label>
+              <label className='label' for="red" onClick={this.handler} id="red">Red</label>
             </div>
-            <div className='group'>
+            <div className='group'onClick={this.handler} id="orange">
               <input className='btns' onClick={this.handler} type="radio" name="btns" id="orange" />
-              <label className='label' for="orange">Orange</label>
+              <label className='label' for="orange" onClick={this.handler} id="orange">Orange</label>
             </div>
-            <div className='group'>
+            <div className='group' onClick={this.handler} id="yellow">
               <input className='btns' onClick={this.handler} type="radio" name="btns" id="yellow" />
-              <label className='label' for="yellow">Yellow</label>
+              <label className='label' for="yellow"onClick={this.handler} id="yellow" >Yellow</label>
             </div>
           </div>
         </div>
@@ -377,6 +377,7 @@ handler = (e) => {
 
 GenerationUI.propTypes = {
   generateGame: PropTypes.func.isRequired,
+  handler: PropTypes.func.isRequired,
 };
 
 const NumberControl = ({ number, onClick, completionPercentage }) => (
@@ -848,7 +849,9 @@ export default class Index extends Component {
 
   renderGenerationUI() {
     return (
-      <GenerationUI generateGame={this.generateGame} />
+
+      <GenerationUI generateGame={this.generateGame} handler={this.handler} />
+    
     );
   }
 
