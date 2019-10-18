@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Set, List, fromJS } from 'immutable';
 import PropTypes from 'prop-types';
 import NextHead from 'next/head';
-import Color from 'color';
 import InputRange from 'react-input-range';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import css from 'styled-jsx/css';
@@ -15,21 +14,52 @@ import ReloadIcon from '../svg/reload.svg';
 import ReturnIcon from '../svg/return.svg';
 
 import { makePuzzle, pluck, isPeer as areCoordinatePeers, range } from '../sudoku';
-import { backGroundBlue } from '../colors';
 import Tip from '../components/tool-tip';
-
 
 
 const Description = 'Discover the next evolution of Sudoku with amazing graphics, animations, and user-friendly features. Enjoy a Sudoku experience like you never have before with customizable game generation, cell highlighting, intuitive controls and more!';
 const cellWidth = 2.5;
 
-let LightBlue100 = '#B3E5FC';
-let LightBlue200 = '#81D4FA';
-let LightBlue300 = '#4FC3F7';
-let Indigo700 = '#303F9F';
-let DeepOrange200 = '#FFAB91';
-let DeepOrange600 = '#F4511E';
-let ControlNumberColor = Indigo700;
+const LightBlue100 = '#B3E5FC';
+const LightBlue200 = '#81D4FA';
+const LightBlue300 = '#4FC3F7';
+const Indigo700 = '#303F9F';
+const DeepOrange200 = '#FFAB91';
+const DeepOrange600 = '#F4511E';
+const ControlNumberColor = Indigo700;
+
+const ThemeColors = {
+  Green: [
+    'rgb(0,150,0)',
+    'rgb(0,100,0)',
+    'rgb(0,255,0)',
+  ],
+  Blue: [
+    'rgb(0,0,150)',
+    'rgb(155,155,255)',
+    'rgb(0,0,255)',
+  ],
+  Purple: [
+    'rgb(150,0,150)',
+    'rgb(255,0,255)',
+    'rgb(100,0,100)',
+  ],
+  Red: [
+    'rgb(175,0,0)',
+    'rgb(150,0,0)',
+    'rgb(255,0,0)',
+  ],
+  Orange: [
+    'rgb(255,175,0)',
+    'rgb(255,140,0)',
+    'rgb(255,100,0)',
+  ],
+  Yellow: [
+    'rgb(225,225,0)',
+    'rgb(255,255,0)',
+    'rgb(200,200,0)',
+  ],
+};
 
 // eslint-disable-next-line no-lone-blocks
 { /* language=CSS */ }
@@ -208,6 +238,10 @@ function getFontColor({ value, conflict, prefilled }) {
   return false;
 }
 
+function getThemeColors(theme = 'Green') {
+  return ThemeColors[theme] || [];
+}
+
 class GenerationUI extends Component {
   constructor(props) {
     super(props);
@@ -215,62 +249,27 @@ class GenerationUI extends Component {
     this.handler = this.handler.bind(this);
 
 
-    this.state = { value: 30 };
-    this
+    this.state = {
+      theme: '',
+      value: 30,
+    };
   }
 
   generateGame = () => {
-    console.log('hello')
-    console.log('this is value: ',this.state.value)
     this.props.generateGame(this.state.value);
-    this.forceUpdate()
+    this.forceUpdate();
   }
 
   handler = (e) => {
-    console.log('second e: ', e.target.id);
-    let target = e.target.id;
-    let color1;
-    let color2;
-    let color3;
+    const target = e.target.id;
+    const colors = getThemeColors(target);
 
-    if (target == 'green') {
-        color1 = 'rgb(0,150,0)';
-        color2 = 'rgb(0,100,0)';
-        color3 = 'rgb(0,255,0)';
-    }
-    if (target == 'blue') {
-        color1 = 'rgb(0,0,150)';
-        color2 = 'rgb(155,155,255)';
-        color3 = 'rgb(0,0,255)';
-    }
-    if (target == 'purple') {
-        color1 = 'rgb(150,0,150)';
-        color2 = 'rgb(255,0,255)';
-        color3 = 'rgb(100,0,100)';
-    }
-    if (target == 'red') {
-        color1 = 'rgb(175,0,0)';
-        color2 = 'rgb(150,0,0)';
-        color3 = 'rgb(255,0,0)';
-    }
-    if (target == 'orange') {
-        color1 = 'rgb(255,175,0)';
-        color2 = 'rgb(255,140,0)';
-        color3 = 'rgb(255,100,0)';
-    }
-    if (target == 'yellow') {
-        color1 = 'rgb(225,225,0)';
-        color2 = 'rgb(255,255,0)';
-        color3 = 'rgb(200,200,0)';
-    }
+    colors.forEach((color, index) => {
+      document.documentElement.style.setProperty(`--color${index + 1}`, color);
+    });
 
-
-    //document.getElementsByName('btns').style.setProperty('color1', color2);
-
-    document.documentElement.style.setProperty('--color1', color1);
-    document.documentElement.style.setProperty('--color2', color2);
-    document.documentElement.style.setProperty('--color3', color3);
-}
+    this.setState({ theme: target });
+  }
 
   render() {
     return (
@@ -278,30 +277,16 @@ class GenerationUI extends Component {
         <div className="dropdown">
           <button className="dropbtn btn">Select a color theme</button>
           <div className="dropdown-content">
-            <div className='group' onClick={this.handler} id="green">
-              <input className='btns'  onClick={this.handler} type="radio" name="btns" id="green" />
-              <label className='label' for="green" onClick={this.handler} id="green">Green</label>
-            </div>
-            <div className='group' onClick={this.handler} id="blue">
-              <input className='btns' onClick={this.handler} type="radio" name="btns" id="blue" />
-              <label className='label' for="blue" onClick={this.handler} id="blue">Blue</label>
-            </div>
-            <div className='group' onClick={this.handler} id="purple">
-              <input className='btns' onClick={this.handler} type="radio" name="btns" id="purple" />
-              <label className='label' for="purple" onClick={this.handler} id="purple">Purple</label>
-            </div>
-            <div className='group' onClick={this.handler} id="red">
-              <input className='btns' onClick={this.handler} type="radio" name="btns" id="red" />
-              <label className='label' for="red" onClick={this.handler} id="red">Red</label>
-            </div>
-            <div className='group'onClick={this.handler} id="orange">
-              <input className='btns' onClick={this.handler} type="radio" name="btns" id="orange" />
-              <label className='label' for="orange" onClick={this.handler} id="orange">Orange</label>
-            </div>
-            <div className='group' onClick={this.handler} id="yellow">
-              <input className='btns' onClick={this.handler} type="radio" name="btns" id="yellow" />
-              <label className='label' for="yellow"onClick={this.handler} id="yellow" >Yellow</label>
-            </div>
+            {
+              Object.keys(ThemeColors).map(color => (
+                <div key={color} className="group" onClick={this.handler}>
+                  <label className="label" htmlFor={color}>
+                    <input className="btns" type="radio" name="btns" id={color} checked={this.state.theme === color} />
+                    {color}
+                  </label>
+                </div>
+              ))
+            }
           </div>
         </div>
         <div className="copy">Start with {this.state.value} cells prefilled</div>
@@ -334,16 +319,15 @@ class GenerationUI extends Component {
 
             @import './vars.css'
             :root {
-              --color1: rgb(0,150,0);
-              --color2: rgb(0,100,0);
-              --color3: rgb(0,255,0);
+              --color1: ${ThemeColors.Green[0]};
+              --color2: ${ThemeColors.Green[1]};
+              --color3: ${ThemeColors.Green[2]};
           }
 
           
             body {
               background-color: var(--color3)
             }
-
 
             .dropdown-content {
               left: 20px;
@@ -354,19 +338,18 @@ class GenerationUI extends Component {
               z-index: 1;
               position: absolute;
               top: 50px;
-            
             }
-          
-            .dropdown-content:active {
-              left: 20px;
-              display: none;
-              background-color: #f1f1f1;
-              min-width: 160px;
-              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-              z-index: 1;
-              position: absolute;
-              top: 50px;
-            
+
+            .dropdown-content label {
+              display: flex;
+              width: 100%;
+              margin: 0;
+              padding: 10px 0;
+              align-items: baseline;
+            }
+
+            .dropdown-content input {
+              margin: 10px;
             }
         `}
         </style>
@@ -851,7 +834,7 @@ export default class Index extends Component {
     return (
 
       <GenerationUI generateGame={this.generateGame} handler={this.handler} />
-    
+
     );
   }
 
